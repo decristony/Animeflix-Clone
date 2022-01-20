@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'Netflix';
+  src        : url('../Fonts/BebasNeue-Regular.ttf');
+}
+
+:root {
+  --varColor1: #e50914;
+  --varColor2: #141414;
+  --varColor3: #E5E5E5;
+
+  --varPrimaryFont:
+    --varSecondFont:
+}
+
+
+* {
+  margin    : 0;
+  padding   : 0;
+  box-sizing: border-box;
+}
+
+h3 {
+  color: var(--varColor3);
+}
+
+body {
+  background-color: var(--varColor2);
+
+}
+
+header .container {
+  z-index         : 1;
+  padding         : 0 4rem;
+  text-decoration : none;
+  align-items     : center;
+  display         : flex;
+  justify-content : space-between;
+  background-color: var(--varColor2);
+  height          : 8vh;
+  width           : 100vw;
+  position        : fixed
+}
+
+.container {
+  color: var(--varColor3);
+}
+
+header nav {
+  display: flex;
+  gap    : 1rem;
+}
+
+header nav a {
+
+  color          : var(--varColor3);
+  text-decoration: none;
+}
+
+header nav a:hover {
+  transition: 1s;
+  opacity   : .8;
+}
+
+
+header h2 {
+  margin-right: 3rem;
+  font-size   : 1.56rem;
+  font-family : 'Netflix';
+  color       : var(--varColor1);
+}
+
+main {
+  position: absolute;
+}
+
+.filme-principal {
+
+  margin-top: 8vh;
+
+  /*melhorando qualidade do texto de imagem criando uma opacidade no background*/
+  background     : linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/Wallpapers/PeackBlinder.jpg');
+  height         : 25rem;
+  width          : 100vw;
+  background-size: cover;
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items    : flex-start;
+}
+
+.filme-principal .descricao {
+  margin-bottom: 2.5rem;
+}
+
+.titulo {
+  font-size : 2.5rem;
+  margin-top: 1.25rem;
+
+
+}
+
+
+.botao {
+  background-color: rgba(0, 0, 0, .50);
+  border          : none;
+  color           : #ffff;
+  padding         : 1rem;
+  cursor          : pointer;
+  margin-right    : 1rem;
+  font-size       : .8rem;
+  text-transform  : uppercase;
+  border-radius   : 5px;
+  position        : relative;
+  
+}
+
+
+.botao:hover {
+  background-color: #ffff;
+  color           : var(--varColor2);
+}
