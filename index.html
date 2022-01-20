@@ -15,7 +15,12 @@
   <body>
     <header>
       <div class="container">
-        <h2>NETFLIX</h2>
+        <h2>AnimeFlix</h2>
+        <img
+          class="icon-navbar"
+          src="img/gifs/pikachu.gif"
+          alt="pikachu correndo"
+        />
         <nav>
           <a href=""> Inicio</a>
           <a href="">Séries</a>
@@ -29,11 +34,53 @@
 
     <main>
       <div class="filme-principal">
-        <div class="container">
-          <h3 class="titulo">Peaky Blinders: Sangue, Apostas e Navalhas</h3>
+        <div>
+          <div class="video-control">
+            <button
+              class="botao"
+              onclick="document.getElementById('player').play()"
+            >
+              Play
+            </button>
+            <button
+              class="botao"
+              onclick="document.getElementById('player').pause()"
+            >
+              Pause
+            </button>
+            <button
+              class="botao"
+              onclick="document.getElementById('player').volume+=0.1"
+            >
+              Aumentar volume
+            </button>
+            <button
+              class="botao"
+              onclick="document.getElementById('player').volume-=0.1"
+            >
+              Diminuir volume
+            </button>
+          </div>
+          <video
+            id="player"
+            controls
+            poster="img/Wallpapers/konosubaWallp.jpg"
+            autoplay
+            loop
+          >
+            <source
+              src="img/Wallpapers/Anime Mix「AMV」_ Whatever It Takes.mp4"
+              type="video/mp4"
+              loop
+            />
+          </video>
+        </div>
+        <div class="container descripition">
+          <h3 class="titulo">Kono Subarashii Sekai ni Shukufuku o!</h3>
+
           <p class="descricao">
-            Com a família Shelby abalada pelos prejuízos da crise de 1929, Tommy
-            encara novas ameaças de rivais fascistas e parentes mais jovens.
+            As Bênçãos de Deus Nesse Mundo Maravilhoso! é uma série de light
+            novel escrita por Natsume Akatsuki.
           </p>
           <div class="botoes">
             <button class="botao" role="button">
@@ -49,77 +96,224 @@
         </div>
       </div>
     </main>
-    <section class="second section">
-      <div class="slider">
-        <div class="carrossel-filmes">
-          <div class="owl-carousel owl-theme">
-            <div class="item1">
-              <img
-                class="box-filme"
-                src="img/Wallpapers/posters/min1.jpg"
-                alt="finch"
-              />
-            </div>
-            <div class="item2">
-              <img
-                class="box-filme"
-                src="img/Wallpapers/posters/min2.jpg"
-                alt="finch"
-              />
-            </div>
-            <div class="item3">
-              <img
-                class="box-filme"
-                src="img/Wallpapers/posters/min3.jpg"
-                alt="finch"
-              />
-            </div>
-            <div class="item4">
-              <img
-                class="box-filme"
-                src="img/Wallpapers/posters/min4.jpg"
-                alt="finch"
-              />
-            </div>
-            <div class="item5">
-              <img
-                class="box-filme"
-                src="img/Wallpapers/posters/min5.jpg"
-                alt="finch"
-              />
-            </div>
-            <div class="item6">
-              <img
-                class="box-filme"
-                src="img/Wallpapers/posters/min6.jpg"
-                alt="finch"
-              />
-            </div>
-            <div class="item7">
-              <img
-                class="box-filme"
-                src="img/Wallpapers/posters/min7.jpg"
-                alt="finch"
-              />
-            </div>
-            <div class="item8">
-              <img
-                class="box-filme"
-                src="img/Wallpapers/posters/min8.jpg"
-                alt="finch"
-              />
-            </div>
-            <div class="item9">
-              <img
-                class="box-filme"
-                src="img/Wallpapers/posters/min9.jpg"
-                alt="finch"
-              />
+    <div class="cards">
+      <section class="second section">
+        <p>Veja Agora</p>
+        <div class="slider">
+          <div class="carrossel-filmes">
+            <div class="owl-carousel owl-theme">
+              <div class="item1">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min1.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item2">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min2.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item3">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min3.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item4">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min4.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item5">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min5.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item6">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min6.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item7">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min7.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item8">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min8.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item9">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min9.jpg"
+                  alt="finch"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <p>Mais vistos</p>
+      <section class="third section">
+        <div class="slider">
+          <div class="carrossel-filmes">
+            <div class="owl-carousel owl-theme">
+              <div class="item1">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min1.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item2">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min2.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item3">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min3.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item4">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min4.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item5">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min5.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item6">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min6.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item7">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min7.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item8">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min8.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item9">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min9.jpg"
+                  alt="finch"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <p>Recomendados</p>
+      <section class="four section">
+        <div class="slider">
+          <div class="carrossel-filmes">
+            <div class="owl-carousel owl-theme">
+              <div class="item1">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min1.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item2">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min2.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item3">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min3.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item4">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min4.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item5">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min5.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item6">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min6.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item7">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min7.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item8">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min8.jpg"
+                  alt="finch"
+                />
+              </div>
+              <div class="item9">
+                <img
+                  class="box-filme"
+                  src="img/Wallpapers/posters/min9.jpg"
+                  alt="finch"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/0330c1bdf3.js"
