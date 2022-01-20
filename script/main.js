@@ -1,7 +1,7 @@
 $('.owl-carousel').owlCarousel({
   loop: true,
   margin: 10,
-  nav: true,
+  nav: false,
   responsive: {
     0: {
       items: 3
@@ -20,3 +20,8 @@ $('.owl-carousel').owlCarousel({
     }
   }
 })
+
+
+var wallpaper = document.getElementsByClassName(".filme-principal")
+
+

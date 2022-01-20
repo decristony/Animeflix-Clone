@@ -49,6 +49,10 @@ header .container {
 
 }
 
+.container p {
+  margin-top: 1rem;
+}
+
 header nav {
 
   display: flex;
@@ -141,6 +145,7 @@ header h2 {
   height : 100%;
   width  : 100%;
   display: block;
+  cursor : pointer;
 }
 
 .carrossel-filmes {
@@ -149,5 +154,10 @@ header h2 {
 
 .slider {
   display: block;
+
+}
+
+.owl-dots {
+  display: none;
 
 }
