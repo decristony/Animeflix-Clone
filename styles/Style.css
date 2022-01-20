@@ -84,7 +84,7 @@ header h2 {
 
   margin-top     : 8vh;
   /*melhorando qualidade do texto de imagem criando uma opacidade no background*/
-  background     : linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/Wallpapers/PeackBlinder.jpg');
+  background     : linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../img/Wallpapers/PeackBlinder.jpg');
   height         : 30rem;
   width          : 100vw;
   background-size: cover;
