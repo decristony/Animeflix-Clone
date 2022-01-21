@@ -1,4 +1,4 @@
-# Netflix-Clone
+# Animeflix-Clone
 
 Projeto funcionando criado no bootcamp Developer front end Inter  
 digital inovation one 
