@@ -93,9 +93,9 @@ header h2 {
 }
 
 .filme-principal video {
-  top            : 0;
+  top            : -5%;
   position       : absolute;
-  width          : 100vw;
+  width          : 100%;
   height         : auto;
   min-height     : 720px;
   overflow       : visible;
@@ -136,7 +136,7 @@ header h2 {
 
 .filme-principal .video-control {
   right  : 10vw;
-  top    : 20%;
+  top    : 30%;
   z-index: 1;
 }
 
