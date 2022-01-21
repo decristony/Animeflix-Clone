@@ -55,8 +55,14 @@ header .container {
   margin-top: 1rem;
 }
 
+header {
+  z-index : 9999;
+  position: fixed;
+}
+
 header nav {
-  z-index: 200;
+
+
   display: flex;
   gap    : 1rem;
 }
@@ -109,6 +115,8 @@ header h2 {
 }
 
 .descripition {
+  position: relative;
+
   margin-left  : .5rem;
   background   : #141414;
   opacity      : .6;
@@ -120,7 +128,13 @@ header h2 {
   opacity: 1;
 }
 
+.filme-principal .video-control {
+  top    : 20px;
+  z-index: 1;
+}
+
 .filme-principal .video-control button {
+
   margin-bottom  : 5px;
   display        : flex;
   width          : 5vw;
