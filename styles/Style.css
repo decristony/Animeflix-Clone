@@ -93,11 +93,17 @@ header h2 {
 }
 
 .filme-principal video {
-  top     : 0;
-  position: absolute;
-  width   : 99vw;
-  height  : auto;
-  z-index : 0;
+  top            : 0;
+  position       : absolute;
+  width          : 100vw;
+  height         : auto;
+  min-height     : 720px;
+  overflow       : visible;
+  background-size: contain;
+
+
+  z-index   : 0;
+  overflow-y: hidden;
 }
 
 .filme-principal .video-control {
@@ -129,7 +135,8 @@ header h2 {
 }
 
 .filme-principal .video-control {
-  top    : 20px;
+  right  : 10vw;
+  top    : 20%;
   z-index: 1;
 }
 
@@ -152,6 +159,7 @@ header h2 {
 
 
 section {
+  margin-top   : 5%;
   margin-bottom: 5rem;
   color        : var(--varColor3);
 }
